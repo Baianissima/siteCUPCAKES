@@ -7,9 +7,8 @@
 }
 
 /* déclaration des couleurs en :root */
-
 :root {
-    --rose-extra-focé: #b934a2;
+    --rose-extra-foncé: #b934a2;
     --rose-foncé: #bd549f;
     --rose-moyen: #ed8edc;
     --rose-clair : #f8f1f5;
