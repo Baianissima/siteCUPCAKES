@@ -9,21 +9,147 @@
 /* déclaration des couleurs en :root */
 
 :root {
-    --pink: #bd549f;
+    --rose-extra-focé: #b934a2;
+    --rose-foncé: #bd549f;
+    --rose-moyen: #ed8edc;
+    --rose-clair : #f8f1f5;
     --blanc: #fff;
     --noir: #000;
 }
 
 body {
-    margin: 0 auto;
     background: repeating-linear-gradient(90deg, #E2C9D7, #E2C9D7 20px, #E9D2DF 0, #E9D2DF 40px);
     font-family: Arial, Helvetica, sans-serif;
 }
 
 .container {
-
+    margin: 0 auto;
+    background-color: var(--rose-clair);
+    width: 1000px;
+    border-left: 30px solid var(--pink);
 }
 
 header {
-    
+    margin: 0 auto;
+    display: flex;
+    height: 150px;
+    width: 1000px;
+    background-color: var(--blanc);
+    justify-content: space-between;
+    padding: 15px;
+}
+
+h1 {
+    background-color: var(--rose-extra-focé);
+    color: var(--blanc);
+    letter-spacing: 1px;
+}
+
+.row {
+    display: flex;
+    flex-flow: row wrap;
+}
+
+.logo {
+    display: flex;
+    justify-content: flex-end;
+}
+
+.adresse {
+    display: flex;
+    flex-direction: column;
+    color: var(--pink);
+    padding-bottom: 30px;
+    padding-right: 20px;
+}
+
+.adresse {
+    display: flex;
+    justify-content: flex-end;
+    align-items: flex-end;
+}
+
+/* partie principale */
+
+h2 {
+    color: var(--rose-foncé);
+    background-color: var(--blanc);
+    letter-spacing: 1px;
+}
+
+h3 {
+    color: var(--rose-foncé);
+    background-color: var(--blanc);
+    letter-spacing: 1px;
+}
+
+
+section {
+    margin: 0 auto;
+    height: 300px;
+    background: var(--rose-clair);
+    /* padding: 20px; */
+}
+
+/* les classes pour déclarer les colonnes */
+
+.col-1 {
+width: 8.333333%;
+padding: 5px;
+/* cette valeur est la largeur en % d'une colonne si je veux la largeur de 2 colonnes je fais la largeur d'une colonne X 2 */
+}
+
+.col-2 {
+width: 16.666666%;
+padding: 5px;
+}
+
+.col-3 {
+width: 25%;
+padding: 5px;
+}
+
+.col-4 {
+width: 33.333333%;
+padding: 5px;
+}
+
+.col-5 {
+width: 41.666666%;
+padding: 5px;
+}
+
+.col-6 {
+width: 50%;
+padding: 5px;
+}
+
+.col-7 {
+width: 58.333333%;
+padding: 5px;
+}
+
+.col-8 {
+width: 66.666666%;
+padding: 5px;
+}
+
+.col-9 {
+width: 75%;
+/* padding: 5px; */
+}
+
+.col-10 {
+width: 83.333333%;
+padding: 5px;
+}
+
+.col-11 {
+width: 91.666666%;
+padding: 5px;
+}
+
+.col-12 {
+width: 100%;
+padding: 5px;    
 }
