@@ -6,6 +6,7 @@
     padding: 0;
 }
 
+/* déclaration des couleurs en :root */
 :root {
     --pink: #bd549f;
     --blanc: #fff;
@@ -15,4 +16,10 @@
 body {
     margin: 0 auto;
     background: repeating-linear-gradient(90deg, #E2C9D7, #E2C9D7 20px, #E9D2DF 0, #E9D2DF 40px);
+    font-family: Arial, Helvetica, sans-serif;
+}
+
+.container{
+    
+    
 }
