@@ -12,83 +12,127 @@
     --rose-foncé: #bd549f;
     --rose-moyen: #ed8edc;
     --rose-clair : #f8f1f5;
+    --rose-extra-clair: #fbf8fa;
     --blanc: #fff;
     --noir: #000;
 }
 
 body {
     background: repeating-linear-gradient(90deg, #E2C9D7, #E2C9D7 20px, #E9D2DF 0, #E9D2DF 40px);
-    font-family: Arial, Helvetica, sans-serif;
+    font-family:Arial, Helvetica, sans-serif;
+    color: var(--noir);
 }
 
 .container {
     margin: 0 auto;
+    margin-top: 50px;
     background-color: var(--rose-clair);
-    width: 1000px;
-    border-left: 30px solid var(--pink);
+    width: 60%;
+    border-left: 30px solid var(--rose-foncé);
 }
 
 header {
-    margin: 0 auto;
     display: flex;
     height: 150px;
-    width: 1000px;
+    width: 100%;
     background-color: var(--blanc);
     justify-content: space-between;
     padding: 15px;
 }
 
+header div {
+    display: block;
+    align-items: flex-end;
+    padding: 5px;
+}
+
 h1 {
-    background-color: var(--rose-extra-focé);
+    background-color: var(--rose-extra-foncé);
     color: var(--blanc);
-    letter-spacing: 1px;
+    letter-spacing: 2px;
+    margin-top: 10px;
 }
 
-.row {
-    display: flex;
-    flex-flow: row wrap;
+h2, h3 {
+    color: var(--rose-extra-foncé);
+    background-color: var(--blanc);
+    letter-spacing: 2px;
+    padding: 10px;
 }
 
-.logo {
-    display: flex;
-    justify-content: flex-end;
+header div p {
+    color: var(--rose-foncé);
+    letter-spacing: 2px;
+    /* padding-top: 5px; */
+    
 }
 
-.adresse {
-    display: flex;
-    flex-direction: column;
-    color: var(--pink);
-    padding-bottom: 30px;
-    padding-right: 20px;
-}
-
-.adresse {
+/* .adresse {
     display: flex;
     justify-content: flex-end;
     align-items: flex-end;
-}
+} */
 
 /* partie principale */
 
 h2 {
     color: var(--rose-foncé);
     background-color: var(--blanc);
+    margin: 10px;
     letter-spacing: 1px;
 }
 
 h3 {
     color: var(--rose-foncé);
     background-color: var(--blanc);
+    margin: 10px;
     letter-spacing: 1px;
 }
 
-
 section {
+    display: flex;
+    flex-flow: row wrap;
     margin: 0 auto;
+    padding: 0;
     height: 300px;
     background: var(--rose-clair);
-    /* padding: 20px; */
+    padding: 20px;
 }
+
+.img-cupcake-1 {
+    width: 20%;
+}
+
+.img-cupcake {
+    width: 30%;
+}
+
+figure {
+    margin: 0;
+    padding: 0;
+    /* Ici pour l animation : */
+    position: relative;
+    /* Avec overflow:hidden l'image ne deborde pas ds figure, elle s'adapte au conteneur SANS BESOIN DE SCROLL */
+    overflow: hidden;
+}
+
+
+figcaption {
+    background-color: var(--rose-extra-clair);
+
+    /* ici ça sert pour l'animaiton aussi */
+    /* position: relative; */
+    position: absolute;
+    bottom: 0;
+    height: 20px;
+    width: 100%;
+    color: var(--noir);
+    text-align: center;
+}
+
+
+
+
 
 /* les classes pour déclarer les colonnes */
 
@@ -135,7 +179,8 @@ padding: 5px;
 
 .col-9 {
 width: 75%;
-/* padding: 5px; */
+padding: 5px;
+margin: 0 auto;
 }
 
 .col-10 {
@@ -150,5 +195,5 @@ padding: 5px;
 
 .col-12 {
 width: 100%;
-padding: 5px;    
+/* padding: 5px;     */
 }
