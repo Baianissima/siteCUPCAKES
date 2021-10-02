@@ -75,6 +75,10 @@ header div p {
 
 /* partie principale */
 
+/* .row {
+    display: flex;
+} */
+
 h2 {
     color: var(--rose-foncé);
     background-color: var(--blanc);
@@ -89,22 +93,34 @@ h3 {
     letter-spacing: 1px;
 }
 
-section {
+main section {
     display: flex;
-    flex-flow: row wrap;
+    flex-direction: row;
     margin: 0 auto;
     padding: 0;
     height: 300px;
     background: var(--rose-clair);
-    padding: 20px;
+    /* padding: 20px; */
+}
+
+.row {
+    flex-direction: row;
+    align-items: center;
+    /* justify-content:space-between; */
 }
 
 .img-cupcake-1 {
-    width: 20%;
+    width: 40%;
 }
 
 .img-cupcake {
-    width: 30%;
+    width: 20%;
+    height: 30%;
+}
+
+.map_boston {
+    /* position: relative; */
+    width: 50%;
 }
 
 figure {
@@ -119,18 +135,19 @@ figure {
 
 figcaption {
     background-color: var(--rose-extra-clair);
-
-    /* ici ça sert pour l'animaiton aussi */
-    /* position: relative; */
-    position: absolute;
-    bottom: 0;
-    height: 20px;
-    width: 100%;
+    height: 20px; 
+    width: 20%;
     color: var(--noir);
     text-align: center;
+    position: relative;
+    position: absolute;
+    bottom: 0;
+   
 }
 
-
+section ul li {
+    text-transform: none;
+}
 
 
 
